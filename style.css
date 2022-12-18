@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #312E2B;
+    flex-direction: column;
+}
+.score{
+    color: yellow;
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+}
+.exampleFlag{
+    width: 40px;
+    height: 40px;
+    margin: 0px 10px;
+    background: yellow;
+}
+.board{
+    width: 600px;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.block{
+    border: 1px solid red;
+    width: calc(100% / 18);
+    height: calc(100% / 14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: yellow; */
+}
+.block *{
+    color: white;
+}
+.block.show{
+    background: black;
+}
+.bomb{
+    /* background: red; */
+}
+.bomb.show{
+    background: red;
+}
+.flag{
+    background: yellow;
+}
